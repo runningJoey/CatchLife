@@ -14,6 +14,8 @@
 		883115881BF0BDD80022ADCD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883115871BF0BDD80022ADCD /* Images.xcassets */; };
 		8831158B1BF0BDD80022ADCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883115891BF0BDD80022ADCD /* LaunchScreen.xib */; };
 		883115971BF0BDD80022ADCD /* CatchLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 883115961BF0BDD80022ADCD /* CatchLifeTests.m */; };
+		883115A21BF0BF600022ADCD /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883115A11BF0BF600022ADCD /* BaseController.m */; };
+		883115A31BF0BF600022ADCD /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883115A11BF0BF600022ADCD /* BaseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		883115901BF0BDD80022ADCD /* CatchLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		883115951BF0BDD80022ADCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883115961BF0BDD80022ADCD /* CatchLifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchLifeTests.m; sourceTree = "<group>"; };
+		883115A01BF0BF600022ADCD /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		883115A11BF0BF600022ADCD /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				8831157F1BF0BDD80022ADCD /* AppDelegate.m */,
 				883115811BF0BDD80022ADCD /* ViewController.h */,
 				883115821BF0BDD80022ADCD /* ViewController.m */,
+				883115A01BF0BF600022ADCD /* BaseController.h */,
+				883115A11BF0BF600022ADCD /* BaseController.m */,
 				883115841BF0BDD80022ADCD /* Main.storyboard */,
 				883115871BF0BDD80022ADCD /* Images.xcassets */,
 				883115891BF0BDD80022ADCD /* LaunchScreen.xib */,
@@ -221,6 +227,7 @@
 			files = (
 				883115831BF0BDD80022ADCD /* ViewController.m in Sources */,
 				883115801BF0BDD80022ADCD /* AppDelegate.m in Sources */,
+				883115A21BF0BF600022ADCD /* BaseController.m in Sources */,
 				8831157D1BF0BDD80022ADCD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883115A31BF0BF600022ADCD /* BaseController.m in Sources */,
 				883115971BF0BDD80022ADCD /* CatchLifeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
