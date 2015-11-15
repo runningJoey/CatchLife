@@ -25,6 +25,7 @@ PODS:
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
+  - SuperID (1.5.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2.2)
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
   - MJRefresh (~> 3.0.1)
   - SDWebImage (~> 3.7.3)
+  - SuperID (~> 1.5.0)
 
 SPEC CHECKSUMS:
   AFNetworking: caca0799b310f0c3bf1fc1af45145fc96972bcab
@@ -41,5 +43,6 @@ SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJRefresh: ca22bb7197c4a17a0491763773cd5cb106b2a810
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SuperID: 4d2370fc2980e7fce79edbbd18e1140e50380714
 
 COCOAPODS: 0.39.0
