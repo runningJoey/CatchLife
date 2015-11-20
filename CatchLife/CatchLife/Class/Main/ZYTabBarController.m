@@ -11,7 +11,8 @@
 #import "LifeController.h"
 #import "RecreationController.h"
 #import "GroupBuyController.h"
-#import "TripController.h"
+#import "MyController.h"
+
 #import "NewsController.h"
 #import "MyBase.h"
 
@@ -38,13 +39,14 @@
 
 - (void)createTabBar
 {
-    self.tabBar.hidden = NO;
+    self.tabBar.hidden = 1;
     _tabBarBGView.userInteractionEnabled = YES;
+    
     _tabBarBGView = [[UIView alloc]initWithFrame:self.tabBar.frame];
-    _tabBarBGView.backgroundColor = [UIColor colorWithRed:0.55 green:0.44 blue:0.87 alpha:1];
+    _tabBarBGView.backgroundColor = __bgColor;
     [self.view addSubview:_tabBarBGView];
     
-    NSArray *titleArray = @[@"生活", @"娱乐", @"团购", @"出行", @"新闻"];
+    NSArray *titleArray = @[@"生活", @"精选", @"团购", @"新闻", @"我"];
     
     _count = titleArray.count;
     
@@ -59,10 +61,8 @@
         
         [_tabBarBGView addSubview:button];
         button.tag = 300 + i;
-        
-        NSLog(@"tabbar%d", i+1);
-        
-        UILabel *label = [MyBase baseCreateLabelFrame:CGRectMake(0, 38, W, 9) text:titleArray[i] textColor:[UIColor colorWithHue:0.71 saturation:0.22 brightness:0.93 alpha:1] fontSize:9 textAlignment:NSTextAlignmentCenter];
+    
+        UILabel *label = [MyBase baseCreateLabelFrame:CGRectMake(0, 38, W, 9) text:titleArray[i] textColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.6] fontSize:9 textAlignment:NSTextAlignmentCenter];
         [button addSubview:label];
         label.tag = 400;
         
@@ -70,14 +70,8 @@
             button.selected = YES;
             label.textColor = [UIColor whiteColor];
         }
-        
     }
-    
-    
-    
 }
-
-
 
 //点击事件
 - (void)btnClick:(UIButton *)btn
@@ -87,7 +81,7 @@
     lastBtn.selected = NO;
     
     UILabel *lastLabel = (UILabel *)[lastBtn viewWithTag:400];
-    lastLabel.textColor = [UIColor colorWithHue:0.71 saturation:0.22 brightness:0.93 alpha:1];
+    lastLabel.textColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.6];
     
     btn.selected = YES;
     UILabel *label = (UILabel *)[btn viewWithTag:400];
@@ -101,7 +95,7 @@
 - (void)createControllers
 {
     
-    NSArray *clsArray = @[@"LifeController", @"RecreationController", @"GroupBuyController", @"TripController", @"NewsController"];
+    NSArray *clsArray = @[@"LifeController", @"RecreationController", @"GroupBuyController", @"NewsController", @"MyController"];
     NSMutableArray *array = [NSMutableArray array];
     for (int i = 0; i < _count ; i++) {
         Class cls = NSClassFromString(clsArray[i]);

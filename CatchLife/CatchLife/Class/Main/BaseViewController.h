@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseViewController : UIViewController
+{
+    UIView *_navigationBar;
+}
 
-
-- (void)addNavLabelFrame:(CGRect)frame text:(NSString *)text fontSize:(CGFloat)fontSize;
+- (void)addNavLabelFrame:(CGRect)frame text:(NSString *)text fontSize:(CGFloat)fontSize isCenter:(BOOL)isCenter;
 
 - (void)addNavImageViewFrame:(CGRect)frame imageName:(NSString *)imageName;
 

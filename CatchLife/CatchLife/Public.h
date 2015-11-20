@@ -13,4 +13,6 @@
 #define __kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define __kScreenHeight [UIScreen mainScreen].bounds.size.height
 
+#define __bgColor [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]
+
 #endif

@@ -58,11 +58,15 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "AMap2DMap/MAMapKit.framework/Versions/3.1.0.56231a5/Resources/AMap.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt"
   install_resource "SuperID/SuperID-SDK-iOS/SuperIDSDKSettings.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "AMap2DMap/MAMapKit.framework/Versions/3.1.0.56231a5/Resources/AMap.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt"
   install_resource "SuperID/SuperID-SDK-iOS/SuperIDSDKSettings.bundle"
 fi
 

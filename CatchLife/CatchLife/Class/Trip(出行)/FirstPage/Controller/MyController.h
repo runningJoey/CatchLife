@@ -1,13 +1,13 @@
 //
-//  TripController.h
+//  MyController.h
 //  CatchLife
 //
-//  Created by iMAC on 15/11/15.
+//  Created by iMAC on 15/11/20.
 //  Copyright (c) 2015年 iMAC. All rights reserved.
 //
 
 #import "BaseViewController.h"
 
-@interface TripController : BaseViewController
+@interface MyController : BaseViewController
 
 @end
